@@ -456,3 +456,49 @@
         </tr>
     </tbody>
 </table>
+
+### Transactional Sagas
+
+<table>
+    <thead>
+        <tr>
+            <th>Technique</th>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>State management</td>
+            <td>
+                <ul>
+                    <li>Good responsiveness</li>
+                    <li>Less impact to end user for errors</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Data may be out of sync when errors occur</li>
+                    <li>Eventual consistency may take some time</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Atomic distributed transactions and compensating update</td>
+            <td>
+                <ul>
+                    <li>All data restored to prior state</li>
+                    <li>Allows retries and restart</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>No transaction isolation</li>
+                    <li>Side effects may occur on compensation</li>
+                    <li>Compensation may fail</li>
+                    <li>Poor responsiveness for the end user</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
