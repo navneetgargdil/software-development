@@ -137,3 +137,111 @@
         </tr>
     </tbody>
 </table>
+
+### Data Ownership and Distributed Transactions
+
+#### Joint Ownership
+
+<table>
+    <thead>
+        <tr>
+            <th>Technique</th>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <dl>
+                    <dt>Joint Ownership &ndash; Table Split</dt>
+                    <dd>Breaks a single table into multiple tables so that each service owns a part of the data it's responsible for</dd>
+                </dl>
+            </td>
+            <td>
+                <ul>
+                    <li>Preserves bounded context</li>
+                    <li>Single data ownership</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Tables must be altered and restructured</li>
+                    <li>Possible data consistency issues</li>
+                    <li>No ACID transaction between table updates</li>
+                    <li>Data synchronization is difficult</li>
+                    <li>Data replication between tables may occur</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <dl>
+                    <dt>Joint Ownership &ndash; Data Domain</dt>
+                    <dd>Data ownership is shared between the services, creating multiple owners for the table</dd>
+                </dl>
+            </td>
+            <td>
+                <ul>
+                    <li>Good data access performance</li>
+                    <li>No scalability and throughput issues</li>
+                    <li>Data remains consistent</li>
+                    <li>No service dependency</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Data schema changes involve more services</li>
+                    <li>Increased testing scope for data schema changes</li>
+                    <li>Data ownership governance (write responsibility)</li>
+                    <li>Increased deployment risk for data schema changes</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <dl>
+                    <dt>Joint Ownership &ndash; Delegate</dt>
+                    <dd>One service is assigned single ownership of the table and becomes the delegate, and the other service (or services) communicates with the delegate to perform updates on its behalf</dd>
+                </dl>
+            </td>
+            <td>
+                <ul>
+                    <li>Forms single table ownership</li>
+                    <li>Good data schema change control</li>
+                    <li>Abstracts data structures from other services</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>High level of service coupling</li>
+                    <li>Low performance for nonowner writes</li>
+                    <li>No atomic transaction for nonowner writes</li>
+                    <li>Low fault tolerance for nonowner services</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <dl>
+                    <dt>Joint Ownership &ndash; Service Consolidation</dt>
+                    <dd>Resolves service dependency and addresses joint ownership by combining multiple table owners (services) into a single consolidated service, thus moving joint ownership into a single ownership scenario</dd>
+                </dl>
+            </td>
+            <td>
+                <ul>
+                    <li>Preserves atomic transactions</li>
+                    <li>Good overall performance</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>More coarse-grained scalability</li>
+                    <li>Less fault tolerance</li>
+                    <li>Increased deployment risk</li>
+                    <li>Increased testing scope</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
