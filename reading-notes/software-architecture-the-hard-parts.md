@@ -324,3 +324,135 @@
         </tr>
     </tbody>
 </table>
+
+### Managing Distributed Workflows
+
+#### Orchestration vs. Choreography Communication Styles
+
+<table>
+    <thead>
+        <tr>
+            <th>Communication Style</th>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <dl>
+                    <dt>Orchestration Communication Style</dt>
+                    <dd>Has an orchestrator that manages workflow state, optional behavior, error handling, notification, and other workflows</dd>
+                </dl>
+            </td>
+            <td>
+                <ul>
+                    <li>Centralized workflow</li>
+                    <li>Error handling</li>
+                    <li>Recoverability</li>
+                    <li>State management</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Responsiveness</li>
+                    <li>Fault tolerance</li>
+                    <li>Scalability</li>
+                    <li>Service coupling</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <dl>
+                    <dt>Choreography Communication Style</dt>
+                    <dd>No central coordination; each service participates with others</dd>
+                    <dd><a href="#choreography-strategies">Choreography strategies</a>:</dd>
+                    <dd>
+                        <ul>
+                            <li>Front Controller pattern</li>
+                            <li>Stateless choreography</li>
+                            <li>Stamp coupling</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </td>
+            <td>
+                <ul>
+                    <li>Responsiveness</li>
+                    <li>Scalability</li>
+                    <li>Fault tolerance</li>
+                    <li>Service decoupling</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Distributed workflow
+                    <li>State management</li>
+                    <li>Error handling</li>
+                    <li>Recoverability</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+#### Choreography Strategies
+
+<table>
+    <thead>
+        <tr>
+            <th>Choreography Strategy</th>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Front Controller pattern</td>
+            <td>
+                <ul>
+                    <li>Creates a pseudo-orchestrator within choreography</li>
+                    <li>Makes querying the state of an order trivial</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Adds additional workflow state to a domain service</li>
+                    <li>Increases communication overhead</li>
+                    <li>Detrimental to performance and scale as it increases integration communication chatter</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Stateless choreography</td>
+            <td>
+                <ul>
+                    <li>Offers high performance and scale</li>
+                    <li>Makes querying the state of an order trivial</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Workflow state must be built on the fly</li>
+                    <li>Complexity rises swiftly with complex workflows</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Stamp coupling</td>
+            <td>
+                <ul>
+                    <li>Allows domain services to pass workflow state without additional queries to a state owner</li>
+                    <li>Eliminates need for a front controller</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Contracts must be larger to accommodate workflow state</li>
+                    <li>Doesn't provide just-in-time status queries</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
