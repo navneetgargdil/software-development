@@ -502,3 +502,79 @@
         </tr>
     </tbody>
 </table>
+
+### Contracts
+
+<table>
+    <thead>
+        <tr>
+            <th>Contract Type</th>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Strict contracts</td>
+            <td>
+                <ul>
+                    <li>Guaranteed contract fidelity</li>
+                    <li>Versioned</li>
+                    <li>Easier to verify at build time</li>
+                    <li>Better documentation</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Tight coupling</li>
+                    <li>Versioned</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Loose contracts</td>
+            <td>
+                <ul>
+                    <li>Highly decoupled</li>
+                    <li>Easier to evolve</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Contract management</li>
+                    <li>Requires fitness functions</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Consumer-driven contracts</td>
+            <td>
+                <ul>
+                    <li>Allows loose contract coupling between services</li>
+                    <li>Allows variability in strictness</li>
+                    <li>Evolvable</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Requires engineering maturity</li>
+                    <li>Two interlocking mechanisms rather than one</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Stamp coupling</td>
+            <td>
+                <ul>
+                    <li>Allows complex workflows within choreographed solutions</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Creates (sometimes artificially) high coupling between collaborators</li>
+                    <li>Can create bandwidth issues at high scale</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
