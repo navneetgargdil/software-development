@@ -12,7 +12,7 @@
 | **Availability/partition tolerance** | ★ | ★★★★ | ★★★ | ★★★★ | ★★★ | ★★★ | ★★★ | ★★ |
 | **Consistency** | ★★★★★ | ★★ | ★★ | ★ | ★★★ | ★★ | ★★★ | ★★★ |
 | **Programming language support, product maurity, SQL support, community** | ★★★★ | ★★★ | ★★★ | ★★ | ★★ | ★★ | ★★ | ★★ |
-| **Read/write priority** | `---o---` | `-o-----` | `-o-----` | `-----o-` | `-o-----` | `---o---` | `-o-----` | `-o-----` |
+| **Read/write priority<br/>(← R \| W →)** | `---o---` | `-o-----` | `-o-----` | `-----o-` | `-o-----` | `---o---` | `-o-----` | `-o-----` |
 
 ### Database Types & Products
 
