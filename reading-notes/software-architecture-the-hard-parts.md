@@ -13,3 +13,16 @@
 | **Consistency** | ★★★★★ | ★★ | ★★ | ★ | ★★★ | ★★ | ★★★ | ★★★ |
 | **Programming language support, product maurity, SQL support, community** | ★★★★ | ★★★ | ★★★ | ★★ | ★★ | ★★ | ★★ | ★★ |
 | **Read/write priority** | `---o---` | `-o-----` | `-o-----` | `-----o-` | `-o-----` | `---o---` | `-o-----` | `-o-----` |
+
+### Database Types & Products
+
+| Database Type | Products |
+| ------------- | -------- |
+| Relational |PostgreSQL, Oracle, Microsoft SQL |
+| Key-Value | Riak KV, Amazon DynamoDB, Redis |
+| Document | MongoDB, Couchbase, AWS DocumentDB |
+| Column family | Cassandra, Scylla, Amazon SimpleDB |
+| Graph | Neo4j, Infinite Graph, Tiger Graph |
+| NewSQL | VoltDB, ClustrixDB, SimpleStore (aka MemSQL) |
+| Cloud native | Snowflake, Datomic, Redshift |
+| Time-series | InfluxDB, kdb+, Amazon Timestream |
