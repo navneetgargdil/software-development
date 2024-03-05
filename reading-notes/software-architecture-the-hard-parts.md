@@ -671,3 +671,20 @@
         </tr>
     </tbody>
 </table>
+
+### Build Your Own Trade-Off Analysis
+
+#### The Three-Step Process
+
+1. Find what parts are entangled together.
+2. Analyze how they are coupled to one another.
+3. Assess trade-offs by determining the impact of change to interdependent systems.
+
+#### Trade-Off Techniques
+
+* Qualitative Versus Quantitative Analysis
+* MECE Lists
+* The "Out-of-Context" Trap
+* Model Relevant Domain Cases
+* Prefer Bottom Line over Overwhelming Evidence
+* Avoiding Snake Oil and Evangelism
