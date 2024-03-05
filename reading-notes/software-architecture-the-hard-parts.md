@@ -245,3 +245,82 @@
         </tr>
     </tbody>
 </table>
+
+#### Eventual Consistency Patterns
+
+<table>
+    <thead>
+        <tr>
+            <th>Pattern</th>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <dl>
+                    <dt>Background Synchronization Pattern</dt>
+                    <dd>Uses a separate external service or process to periodically check data sources and keep them in sync with one another</dd>
+                </dl>
+            </td>
+            <td>
+                <ul>
+                    <li>Services are decoupled</li>
+                    <li>Good responsiveness</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Data source coupling
+                    <li>Complex implementation</li>
+                    <li>Breaks bounded contexts</li>
+                    <li>Business logic may be duplicated</li>
+                    <li>Slow eventual consistency</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <dl>
+                    <dt>Orchestrated Request-Based Patten</dt>
+                    <dd>Attempts to process the entire distributed transaction during the business request, and therefore requires some sort of orchestrator to manage the distributed transaction</dd>
+                </dl>
+            </td>
+            <td>
+                <ul>
+                    <li>Slower responsiveness</li>
+                    <li>Complex error handling</li>
+                    <li>Usually requires compensating transactions</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Data schema changes involve more services</li>
+                    <li>Increased testing scope for data schema changes</li>
+                    <li>Data ownership governance (write responsibility)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <dl>
+                    <dt>Event-Based Pattern</dt>
+                    <dd>Events are used in conjunction with an asynchronous publish-and-subscribe message model to post events or command messages to a topic or event stream</dd>
+                </dl>
+            </td>
+            <td>
+                <ul>
+                    <li>Services are decoupled</li>
+                    <li>Timeliness of data consistency</li>
+                    <li>Fast responsiveness</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Complex error handling</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
