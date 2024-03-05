@@ -578,3 +578,96 @@
         </tr>
     </tbody>
 </table>
+
+### Managing Analytical Data
+
+<table>
+    <thead>
+        <tr>
+            <th>Pattern</th>
+            <th>Main Characteristics</th>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data Warehouse pattern</td>
+            <td>
+                <ul>
+                    <li>Data extracted from many sources</li>
+                    <li>Transformed to single schema</li>
+                    <li>Loaded into warehouse</li>
+                    <li>Analysis done on the warehouse</li>
+                    <li>used by data analysts</li>
+                    <li>BI reports and dashboards</li>
+                    <li>SQL-ish interface</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Centralized consolidation of data</li>
+                    <li>Dedicated analytics silo provides isolation</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Extreme partitioning of domain knowledge</li>
+                    <li>Integration brittleness</li>
+                    <li>Complexity</li>
+                    <li>Limited functionality for intended purpose</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Data Lake pattern</td>
+            <td>
+                <ul>
+                    <li>Data extracted from many sources</li>
+                    <li>Loaded into the lake</li>
+                    <li>Used by data scientists</li>
+                    <li>Difficulty in discovery of proper assets</li>
+                    <li>PII and other sensitive data</li>
+                    <li>Still technically, not domain, partitioned</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Offers high performance and scale</li>
+                    <li>Makes querying the state of an order trivial</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Workflow state must be built on the fly</li>
+                    <li>Complexity rises swiftly with complex workflows</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Data Mesh pattern</td>
+            <td>
+                <ul>
+                    <li>Domain ownership of data</li>
+                    <li>Data as a product</li>
+                    <li>Self-serve data platform</li>
+                    <li>Computational federated governance</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Highly suitable for microservices architectures</li>
+                    <li>Follows modern architecture principles and engineering practices</li>
+                    <li>Allows excellent decoupling between analytical and operational data</li>
+                    <li>Carefully formed contracts allow loosely coupled evolution of analytical capabilities</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Requires contract coordination with data product quantum</li>
+                    <li>Requires asynchronous communication and eventual consistency</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
