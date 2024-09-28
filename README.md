@@ -11,6 +11,7 @@
 ## [Data structures and algorithms](./books/data%20structures%20and%20algorithms/)
 
 * [_Data Structures and Algorithms Made Easy_](./books/data%20structures%20and%20algorithms/Data%20Structures%20and%20Algorithms%20Made%20Easy%20Data%20Structures%20and%20Algorithmic%20Puzzles%20(Narasimha%20Karumanchi)%20(Z-Library).pdf)
+* [_Handbook of Data Structures and Applications_](./books/data%20structures%20and%20algorithms/Handbook%20of%20data%20structures%20and%20applications%20(Dinesh%20P.%20Mehta,%20Sartaj%20Sahni%20(editors))%20(Z-Library).pdf)
 
 ## [Software architecture](./books/software%20architecture/)
 
