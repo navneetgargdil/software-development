@@ -4,6 +4,10 @@
 
 * [_Agile Produce Development_](./books/agile%20development/Agile%20Product%20Development%20(Tathagat%20Varma)%20(Z-Library).pdf)
 
+## [Coding](./books/coding/)
+
+* [_24 Patterns for Clean Code_](./books/coding/24%20Patterns%20for%20Clean%20Code.%20Techniques%20for%20Faster,%20Safer%20Code%20with%20Minimal%20Debugging%20(Robert%20Beisert)%20(Z-Library).pdf)
+
 ## [Software architecture](./books/software%20architecture/)
 
 * [_Fundamentals of Software Architecture_](./books/software%20architecture/Fundamentals%20of%20Software%20Architecture%20An%20Engineering%20Approach%20(Mark%20Richards,%20Neal%20Ford)%20(Z-Library).pdf)
