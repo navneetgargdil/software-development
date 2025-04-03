@@ -7,6 +7,8 @@
 ## [Coding](./books/coding/)
 
 * [_24 Patterns for Clean Code_](./books/coding/24%20Patterns%20for%20Clean%20Code.%20Techniques%20for%20Faster,%20Safer%20Code%20with%20Minimal%20Debugging%20(Robert%20Beisert)%20(Z-Library).pdf)
+* [_Clean Code_](./books/coding/clean_code.pdf)
+* [_Software Development, Design, and Coding_](./books/coding/Software%20Development,%20Design%20and%20Coding%20(John%20F.%20Dooley)%20(Z-Library).pdf)
 
 ## [Data structures and algorithms](./books/data%20structures%20and%20algorithms/)
 
