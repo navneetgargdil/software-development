@@ -16,6 +16,10 @@
 * [_Handbook of Data Structures and Applications_](./books/data%20structures%20and%20algorithms/Handbook%20of%20data%20structures%20and%20applications%20(Dinesh%20P.%20Mehta,%20Sartaj%20Sahni%20(editors))%20(Z-Library).pdf)
 * [_Scheduling: Theory, Algorithms, and Systems_ 5th Edition](./books/data%20structures%20and%20algorithms/Scheduling%20Theory,%20Algorithms,%20And%20Systems%205th%20Edition.pdf)
 
+## [Design patterns](./books/design%20patterns/)
+
+* [_Design Patterns: Elements of Reusable Object-Oriented Software_](./books/design%20patterns/Design%20Patterns.pdf)
+
 ## [Software architecture](./books/software%20architecture/)
 
 * [_Fundamentals of Software Architecture_](./books/software%20architecture/Fundamentals%20of%20Software%20Architecture%20An%20Engineering%20Approach%20(Mark%20Richards,%20Neal%20Ford)%20(Z-Library).pdf)
