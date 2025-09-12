@@ -25,6 +25,7 @@
 
 * [_Clean Architecture_](./books/software%20architecture/(Robert%20C.%20Martin%20Series)%20Robert%20C.%20Martin%20-%20Clean%20Architecture_%20A%20Craftsman’s%20Guide%20to%20Software%20Structure%20and%20Design-Prentice%20Hall%20(2017).pdf)
 * [_Fundamentals of Software Architecture_](./books/software%20architecture/Fundamentals%20of%20Software%20Architecture%20An%20Engineering%20Approach%20(Mark%20Richards,%20Neal%20Ford)%20(Z-Library).pdf)
+* [_Just Enough Software Architecture_](./books/software%20architecture/Just%20Enough%20Software%20Architecture%20A%20Risk-Driven%20Approach%20(George%20H.%20Fairbanks)%20(Z-Library).pdf)
 * [_Software Architecture: The Hard Parts_](./books/software%20architecture/Software_Architecture_The_Hard_Parts_(2021).pdf)
 
 ## [Software Engineering](./books/software%20engineering/)
