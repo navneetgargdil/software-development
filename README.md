@@ -24,6 +24,8 @@
 ## [Design Patterns](./books/design%20patterns/)
 
 * [_Design Patterns: Elements of Reusable Object-Oriented Software_](./books/design%20patterns/Design%20Patterns.pdf)
+* [_Head First Design Patterns_](./books/design%20patterns/Head%20First%20Design%20Patterns%20Building%20Extensible%20and%20Maintainable%20Object-Oriented%20Software,%20Second%20Edition%20(Eric%20Freeman,%20Elisabeth%20Robson)%20(Z-Library).pdf)
+* [_Learning Domain-Driven Design_](./books/design%20patterns/Learning%20Domain-Driven%20Design%20Aligning%20Software%20Architecture%20and%20Business%20Strategy%20(Vladik%20Khononov)%20(Z-Library).pdf)
 
 ## [Software Architecture](./books/software%20architecture/)
 
